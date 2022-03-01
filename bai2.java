@@ -11,9 +11,11 @@ public class bai2 {
 		int canh2 = scanner.nextInt();
 		int ChuVi = 2*(canh1+canh2);
 		int DienTich = canh1*canh2;
+		int canhnn = Math.min(canh1, canh2);
 		System.out.println("HCN có cạnh 1 là: "+canh1);
 		System.out.println("HCN có cạnh 2 là: "+canh2);
 		System.out.println("Chu vi: "+ChuVi+"; "+"Diện tích: "+DienTich);
+		System.out.println("HCN có cạnh nhỏ nhất là: "+canhnn);
 	}
 
 }
