@@ -31,6 +31,11 @@ public class Thread {
 				
 				//========Giao tiếp theo giao thức thiết kế=====
 				while(true) {
+					//Gửi yêu cầu cho server
+					String chuoiGui;
+					buffW.write("Nhập số (0-9) cần dịch: ");
+					buffW.flush();
+
 					//Nhận dữ liệu
 					String chuoiNhan= buffRead.readLine();
 					
