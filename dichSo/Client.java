@@ -30,9 +30,12 @@ public class Client {
 			Scanner banPhim = new Scanner(System.in);
 			while(true)
 			{
-				System.out.print("\nClient:");
+				//Yêu cầu từ server
+				String chuoiNhan = buffRead.readLine();
+				System.out.print("Server:"+chuoiNhan);
+
 				String chuoiGui = banPhim.nextLine();
-				//Gửi đi nếu chuỗi không phải "bye"
+				//Gửi đi nếu chuỗi không phải "10"
 				buffW.write(chuoiGui+"\n");
 				buffW.flush();
 				//Nhạn về
