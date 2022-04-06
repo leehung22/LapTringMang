@@ -116,7 +116,7 @@ public class Server extends Thread{
 							break;
 						}
 					else {
-						buffW.write("Không tìm thấy chuỗi!!!"+"\n");
+						buffW.write("Không tìm thấy File!!!"+"\n");
 						buffW.flush();
 					}
 				}
